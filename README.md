@@ -2,27 +2,44 @@ PHP
 1. A string = “(‘apple’,’orange’,’banana’), ” 
 a. Remove the trailing “, ” 
 b. Then add “;” 
+
+```
 <?php
- $string = "(‘apple’,’orange’,’banana’),";
- $modifiedString = substr_replace($string, ';', strlen($string)-1, 1);
- echo $modifiedString;
+	 $string = "(‘apple’,’orange’,’banana’),";
+	 $modifiedString = substr_replace($string, ';', strlen($string)-1, 1);
+	 echo $modifiedString;
   ?>
+  ```
 2. How can we modify the value of a constant? 
-	Ans: The value can not be changed during the execution of script;
+ ```
+Ans: The value can not be changed during the execution of script;
+ ```
 3. Explain how you can pass the variable by the navigation between the pages in PHP? 
-	Ans: Using session. Declare a variable into the session on the first page and get the value from the session using the declared key: ($_SESSION[‘key’]=’ value’
+```
+Ans: Using session. Declare a variable into the session on the first page and get 
+the value from the session using the declared key: ($_SESSION[‘key’]=’ value’
+ ```
 4. How to get a data from a PHP variable into a javascript variable? 
-	Ans:  1. Using Ajax
-	          2. Echo the data directly to the javascript.
+```
+Ans: a. Using Ajax
+     b. Echo the data directly to the javascript.
+```
 5. How to receive or extract values from an HTTP request? 
-	Ans: Using PHP SuperGlobal variables: Like: $_GET,$_POST
+ ```
+ Ans: Using PHP SuperGlobal variables: Like: $_GET,$_POST
+```
 6. How to submit a form and what happens after that submitting a form? 
-	Ans: When clicking the form submit button, then form data will be sent to the specific file which is already added in the form action attribute like: action=“/mail.php”. The request carries some ‘key=value’ pairs. Key is what is specified in the ‘name=’ attribute of the input field. And value is what is typed into the input field.
+```
+Ans: When clicking the form submit button, then form data will be sent 
+to the specific file which is already added in the form action attribute
+like: action=“/mail.php”. The request carries some ‘key=value’ pairs. 
+Key is what is specified in the ‘name=’ attribute of the input field.
+And value is what is typed into the input field.
 
-In the backend mentioned PHP file needs to receive those submitted ‘key=value‘ pairs using either the $_POST or $_GET super global variables depending what method used in the form ‘method=’  attribute of the form tag.
-
-
-
+In the backend mentioned PHP file needs to receive those submitted ‘key=value‘ pairs
+using either the $_POST or $_GET super global variables depending what method used 
+in the form ‘method=’  attribute of the form tag.
+```
 
 7. Definition 
 a. Session
