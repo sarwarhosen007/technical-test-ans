@@ -43,15 +43,29 @@ in the form ‘method=’  attribute of the form tag.
 
 7. Definition 
 a. Session
-	Ans: Session is a PHP super global variable which is used to share data across the web pages and also used to store users/sensitive information on the server.
-b. AJAX? 
-	Ans: Asynchronous JavaScript & XML is used to be updated asynchronously by sent and received data with the web server in background tasks.
+```
+Ans: Session is a PHP super global variable which is used to share data across 
+the web pages and also used to store users/sensitive information on the server.
+```
+b. AJAX?
+```
+Ans: Asynchronous JavaScript & XML is used to be updated asynchronously 
+by sent and received data with the web server in background tasks.
+```
 c. SQL injection?
-	Ans: Writing secure code that doesn’t allow for the injection of malicious code into an application.
+```
+Ans: Writing secure code that doesn’t allow for the injection of malicious code into an application.
+```
 d. Dynamic websites?
-	Ans: A website that can use a single URL to generate a web page with content that changes based on a number of factors.
+```
+Ans: A website that can use a single URL to generate a web page with content that 
+changes based on a number of factors.
+```
 8. How to read contents from a file and write contents in a file. 
-	Ans: file_get_contents(‘file.txt’) is a way to read the contents from a file. The file_put_contents(‘file.txt’,’string’) writes contents in a file.
+```
+Ans: file_get_contents(‘file.txt’) is a way to read the contents from a file. 
+The file_put_contents(‘file.txt’,’string’) writes contents in a file.
+```
 9. Have an array of [first_name, last_name, age] 
 a. $array = [ 
 ['Joe', 'joe@hmail.com', 24], 
@@ -59,13 +73,14 @@ a. $array = [
 ['Dane', 'dane@hmail.com', 20] 
 ]; 
 b. Print this array in html table 
-	Ans: 
+```
+Ans: 
 <table><tr><th>Name</th><th>Email</th><th>Age</th><tr>
 	foreach($array as $item){ 
 echo'<tr><td>'.$item[0].'</td><td>'.$item[1].'</td><td>'.$item[2].'</td><td></tr>';
 }
 </table>
-
+```
 
 MySQL 
 1. What is Relational Database Management System (RDBMS)? 
