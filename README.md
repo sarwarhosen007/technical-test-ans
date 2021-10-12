@@ -83,39 +83,42 @@ echo'<tr><td>'.$item[0].'</td><td>'.$item[1].'</td><td>'.$item[2].'</td><td></tr
 ```
 
 MySQL 
-1. What is Relational Database Management System (RDBMS)? 
-	Ans: It is basically a program that allows us to create,delete and update a relational database. Relational Database is a database system that stores and retrieves data in a tabular format organized in the form of rows and columns.
-
+1. What is Relational Database Management System (RDBMS)?
+```
+Ans: It is basically a program that allows us to create,delete and update a relational database.
+Relational Database is a database system that stores and retrieves data in a tabular format organized 
+in the form of rows and columns.
+```
 2. A table (person) of columns (name, dob, city) 
 a. Find total number of person per city 
-	Ans: ”SELECT count(name) as totPerson from person GROUP BY city”;
+```
+Ans: ”SELECT count(name) as totPerson from person GROUP BY city”;
+```
 b. Where city name starts with a letter ‘D’
-	Ans: “SELECT city from person WHERE city LIKE ‘D%’ ”
+```
+Ans: “SELECT city from person WHERE city LIKE ‘D%’ ”
+```
 3. Tables; person (person_id, person_name, person_dob, salary_per_annum) and person_address  (address_id, person_id, address_line, city) 
 a. List the names of persons who lives in the city ‘Manhattan’ and salary is more than  40,000 per year
+```
 Ans:  “SELECT p.person_name from person p 
 	  Inner join person_address pa ON p.person_id=pa.person_id
          WHERE pa.city=’Manhattan’ AND p.salary_per_annum > 40000”;
-
-
-
-
-
-
-
+```
 
 ## Authenticate User 
 ### Task 1.  
 ⇨ Create a database table for user information, where user name, user login id and user password will  be stored. Note that password will be stored using the simple encryption (e.g. MD5) method. ⇨ Next create a login page, where user will insert their ‘Login ID’ and ‘Password’. System will check  the authentication against the user’s ‘Login ID’ and ‘Password’. 
 ⇨ On success, provide the home page to the user, and On failure, display a failure message. 
 
-Ans: Please check Authenticate User Modules in the github repository.
-Repository : Click Here
-
+```
+Ans: Please check Authenticate User Folder in the this repository.
+```
 ### Task 2 
 ⇨ Add another column ‘UserCategory’ to the user table, value for that column will be either ‘Admin’ or ‘Customer’. 
 ⇨ Create a simple php page, where a new user can be made.  
 ⇨ Create a button on the home page, which will take the user to this User creation page. And this  button and the page will be accessible only to the user who are admin.
 
-Ans: Please check Authenticate User Modules in the github repository.
-Repository : Click Here
+```
+Ans: Please check Authenticate User Folder in the this repository.
+```
